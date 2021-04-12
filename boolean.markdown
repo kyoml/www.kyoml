@@ -5,4 +5,6 @@ permalink: /boolean/
 nav_order: 4
 ---
 
-# Blocks
+# Booleans
+
+| TO DO

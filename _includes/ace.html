@@ -3,11 +3,16 @@
   window.onload = function () {
     const elements = document.getElementsByClassName("ace-editor");
     for (var i = 0; i < elements.length; ++i) {
+      var el = elements.item(i);
       var editor = ace.edit(elements.item(i));
+      var lang = el.getAttribute('lang') || 'kyoml';
+
       editor.setTheme("ace/theme/dracula");
       editor.setReadOnly(true);
+      editor.setHighlightActiveLine(false);
+      editor.setBehavioursEnabled(false);
       editor.renderer.setShowGutter(false);
-      editor.session.setMode("ace/mode/kyoml");
+      editor.session.setMode("ace/mode/" + lang);
       editor.setOptions({ maxLines: Infinity });
     }
   }
