@@ -9,7 +9,7 @@ nav_order: 6
 
 ## Github Issues
 
-<script src="http://code.jquery.com/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
 <div id="github-issues-widget"></div>
 <script type="text/javascript">
   GITHUB_ISSUES_USER = "kyoml";
