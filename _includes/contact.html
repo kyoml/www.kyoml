@@ -1,5 +1,5 @@
 <style>
-  input[type=text], textarea, select {
+  #contact_form input[type=text], textarea, select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -9,7 +9,7 @@
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+  #contact_form input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -20,11 +20,11 @@
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  #contact_form input[type=submit]:hover {
     background-color: #45a049;
   }
   
-  form div {
+  #contact_form div {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -32,6 +32,7 @@
 </style>
   
 <form
+  id="contact_form"
   action="https://formspree.io/f/myylypvr"
   method="POST"
 >
