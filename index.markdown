@@ -1,7 +1,5 @@
 ---
 layout: home
-title: Home
-permalink: /
 ---
 
 {% include fontawesome.html %}
