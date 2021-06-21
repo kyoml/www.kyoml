@@ -16,7 +16,7 @@ No, that is not the purpose of KyoML, it is still very far from a widely support
 There is however a niche set of use cases where you might want to add your own flavors to a configuration file. Or perhaps provide developers a set of helpers within a markup language to set things up properly.
 Those are the times you should consider KyoML.
 
-It is still experimental at this stage,
+It is still experimental at this stage.
 
 ## Which text editors support KyoML syntax coloring ?
 

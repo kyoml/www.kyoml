@@ -7,5 +7,6 @@ nav_order: 4
 
 # Strings
 
+## Simple strings
 
-| TO DO
+Simple strings are the most basic kind of text. They start and end with single quotes `'`
