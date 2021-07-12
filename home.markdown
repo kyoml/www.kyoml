@@ -24,19 +24,40 @@ A dynamic markup language with support for custom directives and plugins
   # Example KyoML document
   #
 
+  # == Key/Value Pairs ==
   noun      = "world"
   greeting  = "hello"
-  sentence  = "${noun} ${greeting}"
+
+  # == String interpolation ==
+  sentence = "${noun} ${greeting}"
+
+  #
+  # == Blocks ==
+  # Main structural construct, can be nested
+  #
 
   kyoml {
-    @directive
+    #
+    # == Directives ==
+    # Enrich your document with plugins and custom methods
+    #
 
+    @directives('rock')
+
+    # == JSON-like data structures ==
+  
     array = [
       1001,
       1003,
       1002
-    ] |> @sort('desc')
-      |> @multiply(10)
+    ]
+
+    #
+    # == Pipes ==
+    # Allow passing values to directives
+    #
+
+    users = "api.com/users" |> @fetch
   }
 </pre>
 
